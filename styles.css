@@ -1,0 +1,137 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.main {
+    /* max-width: 75rem; */
+    margin: 2rem auto;
+}
+
+.dp {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.dp > img {
+    width: 8rem;
+    border-radius: 17px;
+}
+
+.profile {
+    max-width: 19rem;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 15px;
+    margin: .7rem 0 .5rem 0;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.address {
+    text-align: center;
+    font-weight: 700;
+    color: #A9A9A9;
+    letter-spacing: .5px;
+    font-size: 12px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.posts,
+.followers,
+.following {
+    background-color: #d5d2d2;
+    padding: 1rem;
+    border-radius: 12px;
+}
+   
+.posts > p:nth-child(1),
+.followers > p:nth-child(1),
+.following > p:nth-child(1) {
+    text-align: center;
+    font-weight: 900;
+    font-size: 15px;
+}
+   
+.posts > p:nth-child(2),
+.followers > p:nth-child(2),
+.following > p:nth-child(2) {
+    color: #808080;
+    text-align: center;
+    font-size: 14px;
+    /*! font-weight: bold; */
+}
+
+.gallery {
+    padding: 1rem;
+    margin-top: 3rem;
+
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-column-gap: 32px;
+    grid-row-gap: 5px;
+}
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+}
+
+   
+.img1 {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 9rem;
+    border-radius: 10px;
+}
+
+.img2 { 
+    grid-area: 1 / 2 / 2 / 4; 
+    width: 19rem;
+    border-radius: 12px;
+}
+
+.img3 { 
+    grid-area: 2 / 1 / 3 / 3;
+    width: 20rem; 
+}
+
+.img4 { 
+    grid-area: 2 / 3 / 4 / 4; 
+    width: 9rem;
+}
+
+.img5 { 
+    grid-area: 3 / 1 / 4 / 2; 
+    width: 9rem;
+}
+
+.img6 { 
+    grid-area: 3 / 2 / 4 / 3; 
+    width: 9rem;
+}
